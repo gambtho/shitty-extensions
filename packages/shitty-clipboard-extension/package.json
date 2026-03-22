@@ -1,0 +1,38 @@
+{
+  "name": "shitty-clipboard-extension",
+  "version": "0.1.0",
+  "description": "Standalone clipboard extension for pi coding agent",
+  "type": "module",
+  "keywords": [
+    "pi",
+    "pi-coding-agent",
+    "extension",
+    "clipboard",
+    "osc52",
+    "terminal"
+  ],
+  "author": "hjanuschka",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjanuschka/shitty-extensions.git",
+    "directory": "packages/shitty-clipboard-extension"
+  },
+  "homepage": "https://github.com/hjanuschka/shitty-extensions/tree/main/packages/shitty-clipboard-extension#readme",
+  "bugs": {
+    "url": "https://github.com/hjanuschka/shitty-extensions/issues"
+  },
+  "files": [
+    "clipboard.ts",
+    "README.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./clipboard.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@sinclair/typebox": "*"
+  }
+}

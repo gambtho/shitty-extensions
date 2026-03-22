@@ -28,6 +28,12 @@
     "skills/**/*",
     "README.md"
   ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "publish:clipboard": "npm publish ./packages/shitty-clipboard-extension --access public"
+  },
   "pi": {
     "extensions": [
       "./extensions/clipboard.ts",

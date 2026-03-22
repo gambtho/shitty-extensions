@@ -47,6 +47,14 @@ pi install git:github.com/hjanuschka/shitty-extensions
 
 That's it! Pi automatically discovers all extensions and skills from the package.
 
+### Install only clipboard extension
+
+If you only want the clipboard tool as a standalone package:
+
+```bash
+pi install npm:shitty-clipboard-extension
+```
+
 ### Try without installing
 
 Load for a single session without permanent installation:
