@@ -5,7 +5,7 @@
  * Just like Claude Code - type u-l-t-r-a-t-h-i-n-k and watch the magic!
  */
 
-import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
+import type { ExtensionAPI } from "@earendil-works/coding-agent";
 
 // Rainbow colors (ANSI 256 colors for smooth gradient)
 const RAINBOW_COLORS = [
@@ -200,7 +200,7 @@ export default function (pi: ExtensionAPI) {
   });
 
   // Keyboard shortcut
-  pi.registerShortcut("ctrl+u", {
+  pi.registerShortcut("alt+u", {
     description: "Toggle ultrathink mode",
     handler: async (ctx) => {
       if (isShowingRainbow && manualMode) {

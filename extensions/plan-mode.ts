@@ -32,9 +32,9 @@
  * 5. Ctrl+X to toggle planning mode
  */
 
-import type { ExtensionAPI, ExtensionContext, Theme } from "@mariozechner/pi-coding-agent";
-import { DynamicBorder, keyHint, getMarkdownTheme } from "@mariozechner/pi-coding-agent";
-import { StringEnum } from "@mariozechner/pi-ai";
+import type { ExtensionAPI, ExtensionContext, Theme } from "@earendil-works/coding-agent";
+import { DynamicBorder, keyHint, getMarkdownTheme } from "@earendil-works/coding-agent";
+import { StringEnum } from "@earendil-works/pi-ai";
 import { Type } from "@sinclair/typebox";
 import path from "node:path";
 import fs from "node:fs/promises";
@@ -56,7 +56,7 @@ import {
 	matchesKey,
 	truncateToWidth,
 	visibleWidth,
-} from "@mariozechner/pi-tui";
+} from "@earendil-works/pi-tui";
 
 // Configuration
 const PLAN_DIR_NAME = ".pi/plans";
@@ -1820,7 +1820,7 @@ Execute each step in order. Use the plan tool with action "complete-step" and st
 	});
 
 	// Register Ctrl+X shortcut for planning mode toggle
-	pi.registerShortcut("ctrl+x", {
+	pi.registerShortcut("alt+x", {
 		description: "Toggle planning mode",
 		handler: async (ctx) => {
 			togglePlanningMode(ctx);

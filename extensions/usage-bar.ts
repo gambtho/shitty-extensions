@@ -8,8 +8,8 @@
  * - Reset countdowns
  */
 
-import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
-import { visibleWidth } from "@mariozechner/pi-tui";
+import type { ExtensionAPI } from "@earendil-works/coding-agent";
+import { visibleWidth } from "@earendil-works/pi-tui";
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as os from "node:os";
@@ -461,8 +461,6 @@ async function refreshAntigravityAccessToken(refreshToken: string): Promise<{ ac
 		setTimeout(() => controller.abort(), 5000);
 
 		// From the reference snippet in CodexBar issue #129.
-		const clientId = "1071006060591-tmhssin2h21lcre235vtolojh4g403ep.apps.googleusercontent.com";
-		const clientSecret = "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";
 
 		const res = await fetch("https://oauth2.googleapis.com/token", {
 			method: "POST",

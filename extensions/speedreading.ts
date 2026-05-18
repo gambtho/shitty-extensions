@@ -14,8 +14,8 @@
  *   /speedread                  - Speed read last assistant message (default)
  */
 
-import type { ExtensionAPI, ExtensionContext, SessionEntry } from "@mariozechner/pi-coding-agent";
-import { matchesKey, visibleWidth, truncateToWidth } from "@mariozechner/pi-tui";
+import type { ExtensionAPI, ExtensionContext, SessionEntry } from "@earendil-works/coding-agent";
+import { matchesKey, visibleWidth, truncateToWidth } from "@earendil-works/pi-tui";
 import { exec } from "node:child_process";
 import { promisify } from "node:util";
 import { readFile } from "node:fs/promises";
@@ -669,14 +669,4 @@ export default function (pi: ExtensionAPI) {
 		},
 	});
 
-	pi.registerShortcut("ctrl+r", {
-		description: "Speed read last assistant message",
-		handler: async (ctx) => {
-			// Trigger the command with -l flag
-			const handler = pi.getCommand("speedread")?.handler;
-			if (handler) {
-				await handler("-l", ctx);
-			}
-		},
-	});
 }

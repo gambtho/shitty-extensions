@@ -3,8 +3,8 @@
  * "If you're listening to this, you are the resistance."
  */
 
-import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
-import { truncateToWidth } from "@mariozechner/pi-tui";
+import type { ExtensionAPI } from "@earendil-works/coding-agent";
+import { truncateToWidth } from "@earendil-works/pi-tui";
 
 const MESSAGE = "If you're listening to this, you are the resistance. Listen carefully, if we attack tonight, our humanity is lost.";
 
