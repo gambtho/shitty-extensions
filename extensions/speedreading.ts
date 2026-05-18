@@ -14,7 +14,7 @@
  *   /speedread                  - Speed read last assistant message (default)
  */
 
-import type { ExtensionAPI, ExtensionContext, SessionEntry } from "@earendil-works/coding-agent";
+import type { ExtensionAPI, ExtensionContext, SessionEntry } from "@earendil-works/pi-coding-agent";
 import { matchesKey, visibleWidth, truncateToWidth } from "@earendil-works/pi-tui";
 import { exec } from "node:child_process";
 import { promisify } from "node:util";

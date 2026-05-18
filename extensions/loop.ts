@@ -8,10 +8,10 @@
 
 import { Type } from "@sinclair/typebox";
 import { complete, type Api, type Model, type UserMessage } from "@earendil-works/pi-ai";
-import type { ExtensionAPI, ExtensionContext, SessionSwitchEvent } from "@earendil-works/coding-agent";
-import { compact } from "@earendil-works/coding-agent";
+import type { ExtensionAPI, ExtensionContext, SessionSwitchEvent } from "@earendil-works/pi-coding-agent";
+import { compact } from "@earendil-works/pi-coding-agent";
 import { Container, type SelectItem, SelectList, Text } from "@earendil-works/pi-tui";
-import { DynamicBorder } from "@earendil-works/coding-agent";
+import { DynamicBorder } from "@earendil-works/pi-coding-agent";
 
 type LoopMode = "tests" | "custom" | "self";
 

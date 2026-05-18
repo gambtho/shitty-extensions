@@ -1,4 +1,4 @@
-import type { ExtensionAPI } from "@earendil-works/coding-agent";
+import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 import { truncateToWidth } from "@earendil-works/pi-tui";
 
 class FlickerComponent {

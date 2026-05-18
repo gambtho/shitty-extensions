@@ -5,7 +5,7 @@
  * Shows: ✅ Claude ✅ OpenAI ⚠️ GitHub
  */
 
-import type { ExtensionAPI } from "@earendil-works/coding-agent";
+import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 
 // Status page URLs
 const STATUS_URLS: Record<string, { url: string; name: string }> = {

@@ -10,8 +10,8 @@
  */
 
 import { complete, type UserMessage, type Model } from "@earendil-works/pi-ai";
-import type { ExtensionAPI, ExtensionContext, SessionEntry } from "@earendil-works/coding-agent";
-import { BorderedLoader, convertToLlm, serializeConversation } from "@earendil-works/coding-agent";
+import type { ExtensionAPI, ExtensionContext, SessionEntry } from "@earendil-works/pi-coding-agent";
+import { BorderedLoader, convertToLlm, serializeConversation } from "@earendil-works/pi-coding-agent";
 import { Text, matchesKey, visibleWidth } from "@earendil-works/pi-tui";
 import * as fs from "node:fs";
 import * as path from "node:path";

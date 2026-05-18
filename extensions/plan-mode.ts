@@ -32,8 +32,8 @@
  * 5. Ctrl+X to toggle planning mode
  */
 
-import type { ExtensionAPI, ExtensionContext, Theme } from "@earendil-works/coding-agent";
-import { DynamicBorder, keyHint, getMarkdownTheme } from "@earendil-works/coding-agent";
+import type { ExtensionAPI, ExtensionContext, Theme } from "@earendil-works/pi-coding-agent";
+import { DynamicBorder, keyHint, getMarkdownTheme } from "@earendil-works/pi-coding-agent";
 import { StringEnum } from "@earendil-works/pi-ai";
 import { Type } from "@sinclair/typebox";
 import path from "node:path";

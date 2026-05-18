@@ -5,7 +5,7 @@
  * Just like Claude Code - type u-l-t-r-a-t-h-i-n-k and watch the magic!
  */
 
-import type { ExtensionAPI } from "@earendil-works/coding-agent";
+import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 
 // Rainbow colors (ANSI 256 colors for smooth gradient)
 const RAINBOW_COLORS = [

@@ -5,7 +5,7 @@
  * is streaming.
  */
 
-import type { ExtensionAPI } from "@earendil-works/coding-agent";
+import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 
 const DEBUG_FORCE_MESSAGE: string | undefined = "<<< FUN-WORKING ACTIVE >>>";
 
